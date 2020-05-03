@@ -1,7 +1,7 @@
 //displaying current day at the top of the calendar-(moment.js)
 $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
 
-// current hour is declared
+// current hour is declared-(moment.js)
 var currentTime = moment().hours();
 
 var components = $(".description");
