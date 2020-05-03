@@ -1,4 +1,4 @@
-//displaying current day at the top of the calendar
+//displaying current day at the top of the calendar-(moment.js)
 $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
 
 // current hour is declared
@@ -7,7 +7,7 @@ var currentTime = moment().hours();
 var components = $(".description");
 
 for (var i = 0; i < components.length; i++) {
-    //code for storing enetered data into local storage
+    //code for storing enetered events into local storage
     if (localStorage.getItem(components[i].id) == null) {
         components[i].value = "";
     }
@@ -38,7 +38,7 @@ for (var i = 0; i < components.length; i++) {
 
 
 $(document).ready(function () {
-    //event listener for saving the data into the local storage
+    //event listener for saving the events into the local storage
     $(".saveBtn").on("click", function (event) {
         event.preventDefault();
 
